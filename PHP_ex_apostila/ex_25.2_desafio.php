@@ -7,7 +7,7 @@ $seg_2 = readline();
 echo "Terceiro segmento: ";
 $seg_3 = readline();
 
-if ((($seg_1 + $seg_2) > $seg_3) and (($seg_1 + $seg_3) > $seg_2) and (($seg_2 + $seg_3) > $seg_1)) {
+if ((($seg_1 + $seg_2) > $seg_3) && (($seg_1 + $seg_3) > $seg_2) && (($seg_2 + $seg_3) > $seg_1)) {
     echo "Os segmentos podem formar um triângulo";    
 }
 else {
