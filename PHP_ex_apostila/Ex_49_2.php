@@ -4,20 +4,23 @@
 mostre quantos deles são pares e quantos são ímpares.*/
 
 $contador = 1;
+$numPar = 0;
+$numImpar = 0;
 
 while ($contador <= 6) {
 
-    
-    $numeroInt = intval($contador);
-    
+    echo "Digite o " . $contador . "° número: ";
+    $numero = readline();
+    $contador++;
+    $numeroInt = intval($numero);
     
     if ($numeroInt % 2 == 0) {
-        echo "O " . $contador . "° número é par" . PHP_EOL;
-        echo "" . PHP_EOL;
+        $numPar = $numPar + 1;
     }
     elseif ($numeroInt % 2 != 0) {
-        echo "O " . $contador . "° número é ímpar" . PHP_EOL;
-        echo "" . PHP_EOL;
+        $numImpar = $numImpar + 1;
     }
-    $contador++;
+
 }
+echo "Ao todo foram $numPar número(s) pare(s)" . PHP_EOL;
+echo "Ao todo foram $numImpar número(s) ímpar(s)" ; 
