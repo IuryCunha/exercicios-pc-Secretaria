@@ -6,12 +6,14 @@ daquela em que eles foram informados.*/
 
 $vetores = [];
 
-for ($i = 1; $i <= 7; $i++) {
+for ($i = 0; $i <= 7; $i++) {
     echo "Digite um nome: " . PHP_EOL;
     $vetores [$i] = readline(); 
-    $vetores_inertido = array_reverse($vetores);  
+      
 }
 
-foreach ($vetores_inertido as $indice => $valor) {
+$vetores_invertido = array_reverse($vetores);
+
+foreach ($vetores_invertido as $indice => $valor) {
     echo "[$indice] => $valor" . PHP_EOL;
 }
