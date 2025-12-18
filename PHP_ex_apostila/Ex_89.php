@@ -29,4 +29,4 @@ function Gerador($texto, $qtd, $tipoBorda, $bordas) {
 }
 Gerador("Portugol Studio", 3, 3, $bordas);
 
-/* o array $bordas está dentro da função para que ela seja vista, caso contrário ela passa a não existir para a função/*
+/*o array $bordas está dentro da função para que ela seja vista, caso contrário ela passa a não existir para a função*/
