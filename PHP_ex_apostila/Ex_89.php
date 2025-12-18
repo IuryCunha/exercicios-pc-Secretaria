@@ -25,7 +25,7 @@ function Gerador($texto, $qtd, $tipoBorda, $bordas) {
         echo $texto . PHP_EOL;
     }
 
-    echo $bordas[$tipoBorda] . PHP_EOL;
+    echo $bordas[$tipoBorda] . PHP_EOL; // pega a borda escolhida pelo usuário
 }
 Gerador("Portugol Studio", 3, 3, $bordas);
 
